@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple-dark: #882BFF;
+    --purple-darker: #4b1a8b;
+    --purple-medium: #9661cc;
+    --purple-ligth: #c9c3cf;
+    --white:rgb(255, 255, 255);
+    --dark: #000000;
+    --dark-ligther: #141316;
+    --boxShadow: rgb(30, 7, 61);
+}
+
+.list-Item{
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 200 !important;
+    align-items: center ;
+    font-size: 14px !important;
+    color: var(--white) !important;
+}
+
+.p{
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 200 !important;
+    font-size: 1.2rem !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem!important;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500 !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+    color: var(--white);
+    position: relative !important;
+}
+
+#About::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 60px;
+    bottom: 0.5px;
+    border-radius: 8px;
+    background: var(--purple-dark);
+}
+
+#Habilidades::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    bottom: 0.5px;
+    border-radius: 8px;
+    background: var(--purple-dark);
+}
+
+#projetosCard::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 150px;
+    bottom: 0.5px;
+    border-radius: 8px;
+    background: var(--purple-dark);
+}
+
+.image-tag{
+    width: 80%;
+    height: 100%;
+    background-image: url('../../public/Assets/images/tag-html.png') !important;
+    background-repeat: no-repeat!important;
+    background-size: contain !important;
+}
+
+.button-home{
+    font-family: 'Poppins', sans-serif !important;
+    text-transform: none !important;
+    font-weight: 200 !important;
+    border-radius: 7px !important;
+    margin-left: 3rem !important;
+    margin-top: 1.5rem !important;
+    color: var(--white) !important;
+}
+
+#projetos{
+    background-color: var(--purple-dark);
+    margin-left: 3rem !important;
+}
+
+#projetos:hover{
+    background-color: var(--purple-darker);
+}
+
+#curriculo{
+    border-color: var(--purple-dark);
+    margin-left: 1rem !important;
+}
+
+#curriculo:hover{
+    background-color: var(--purple-dark);
+}
+
+.cardHabilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 12rem;
+    margin-top: 3rem;
+    background: linear-gradient(139.04deg, rgba(255, 255, 255, 0.39) -9.89%, rgba(255, 255, 255, 0) 106.65%);
+    border: 0.424528px solid #FFFFFF;
+    backdrop-filter: blur(7.64151px);
+    border-radius: 16.9811px;
+}
+
+.cardHabilidades:hover{
+    box-shadow: 10px 10px 44px 3px var(--boxShadow) !important;
+}
+
+
+.gridHabilidades{
+    display: flex;
+    justify-content: center;
+    margin: none;
+}
