@@ -15,8 +15,8 @@ import ClearIcon from '@mui/icons-material/Clear';
 import "../../config/style.css"
 
  
-const navItems = ['Home', 'Sobre', 'Projetos', 'Contatos'];
-const navIds = ['#Header', '#About', '#Projetos', '#Contatos']
+const navItems = ['Home', 'Sobre', 'Habilidades','Projetos', 'Contatos'];
+const navIds = ['#Header', '#About', '#Habilidades','#Projetos', '#Contatos']
  
 function MyNavBar(props) {
   const { window } = props;
