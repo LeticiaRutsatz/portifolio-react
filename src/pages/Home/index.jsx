@@ -3,10 +3,11 @@ import GlobalStyle from "../../config/GlobalStyle/global"
 import { ThemeProvider, useTheme } from '@mui/material/styles';
 import { theme } from "../../config/Theme";
 import { MyNavBar } from "../../components/NavBar";
-import { SectionHome } from "../../components/SectionHome";
+import { Header } from "../../components/Header";
 import { About } from "../../components/About";
 import { Habilidades } from "../../components/Habilidades";
 import { Projetos } from "../../components/Projetos";
+import { Footer } from "../../components/Footer";
 
 function Home(){
 
@@ -15,10 +16,11 @@ function Home(){
             <ThemeProvider theme={theme}>
                 <GlobalStyle />
                 <MyNavBar />
-                <SectionHome />
+                <Header />
                 <About />
                 <Habilidades />
                 <Projetos />
+                <Footer />
             </ThemeProvider>
         </>
     )

@@ -15,7 +15,8 @@ import ClearIcon from '@mui/icons-material/Clear';
 import "../../config/style.css"
 
  
-const navItems = ['Home', 'Sobre', 'Projetos', 'Contato'];
+const navItems = ['Home', 'Sobre', 'Projetos', 'Contatos'];
+const navIds = ['#Header', '#About', '#Projetos', '#Contatos']
  
 function MyNavBar(props) {
   const { window } = props;
@@ -26,16 +27,24 @@ function MyNavBar(props) {
   };
  
   const drawer = (
-    <Box sx={{ textAlign: 'center', marginTop: '1rem'}}>
+    <Box sx={{  
+      marginTop: '4rem',  
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'column',
+    }}>
       <List sx={{
         '& .MuiListItemButton-root:hover': {
         bgcolor: '#3c0a62'
       },
   }}>
-        {navItems.map((item) => (
-          <ListItem key={item}>
-            <ListItemButton sx={{ textAlign: 'center', padding:'1.7rem'}} >
-              <ListItemText primary={item} className='list-Item'/>
+        {navItems.map((item, index) => (
+          <ListItem key={item} sx={{padding: '2rem'}}>
+            <ListItemButton>
+                <ListItemText className='list-Item'>
+                   <a href={navIds[index]} onClick={handleDrawerToggle}>{item}</a>
+                </ListItemText>
             </ListItemButton>
           </ListItem>
         ))}
@@ -55,7 +64,14 @@ function MyNavBar(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: 'block', fontFamily: 'Baumans', marginLeft:'2rem',marginTop:{xs:'2rem'}, fontWeight: 'bold'}}
+            sx={{ 
+              flexGrow: 1, 
+              display: 'block', 
+              fontFamily: 'Baumans', 
+              marginLeft:'2rem', 
+              marginTop:{xs:'2rem', sm:'0px'}, 
+              fontWeight: 'bold'
+            }}
           >
             L
           </Typography>
@@ -63,14 +79,22 @@ function MyNavBar(props) {
             color="inherit"
             aria-label="open drawer"
             onClick={handleDrawerToggle}
-            sx={{ display: {md: 'none' }, justifyContent: 'end', alignItems: 'end', marginTop: '2rem' }}
+            sx={{ 
+              display: {md: 'none' }, 
+              justifyContent: 'end', 
+              alignItems: 'end', 
+              marginTop: '2rem' 
+            }}
           >
             <MenuIcon />
           </IconButton>
           <Box sx={{ display: { xs: 'none', md: 'block' }}}>
-            {navItems.map((item) => (
-              <Button key={item} className='list-Item' sx={{textTransform:'none', marginLeft: '2rem'}}>
-                {item}
+            {navItems.map((item, index) => (
+              <Button key={item} className='list-Item' sx={{
+                textTransform:'none', 
+                marginLeft: '2rem'
+                }}>
+                <a href={navIds[index]}>{item}</a>
               </Button>
             ))}
           </Box>
@@ -89,7 +113,13 @@ function MyNavBar(props) {
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': {width: '100vw', backgroundColor: '#290743', height:'100vh', marginTop:'5rem', boxShadow: 'none'},
+            '& .MuiDrawer-paper': {
+              width: '100vw', 
+              backgroundColor: '#290743', 
+              height:'100vh', 
+              paddingTop:'2rem', 
+              boxShadow: 'none'
+            },
           }}
         >
           {drawer}

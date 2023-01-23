@@ -18,41 +18,62 @@ function Habilidades(){
                 backgroundColor: '#290743',
                 backgroundSize: 'cover'
             }}>
-                <Typography variant="h4" component="h4" color={theme.letter.primary.main} className='title' id="Habilidades">
+                <Typography 
+                variant="h4" 
+                component="h4" 
+                color={theme.letter.primary.main} 
+                id="Habilidades"
+                className='title' >
                     Habilidades
                 </Typography>
 
-                <Grid container>
-                    <Grid item xs={6} md={3} className='gridHabilidades'>
-                        <CardHabilidades image='./Assets/images/tecnologias/html.png' texto={'HTML'}/>
+                <Grid container sx={{display:'flex', justifyContent:'center'}}>
+                    <Grid item xs={5} md={3} className='gridCards'>
+                        <CardHabilidades 
+                        image='./Assets/images/tecnologias/html.png' 
+                        texto={'HTML'}/>
                     </Grid>
 
-                    <Grid item xs={6} md={3} className='gridHabilidades'>
-                        <CardHabilidades image='./Assets/images/tecnologias/css.png' texto={'CSS'}/>
+                    <Grid item xs={5} md={3} className='gridCards'>
+                        <CardHabilidades 
+                        image='./Assets/images/tecnologias/css.png' 
+                        texto={'CSS'}/>
                     </Grid>
 
-                    <Grid item xs={6} md={3} className='gridHabilidades'>
-                        <CardHabilidades image='./Assets/images/tecnologias/javascript.png' texto={'JavasCript'}/>
+                    <Grid item xs={5} md={3} className='gridCards'>
+                        <CardHabilidades 
+                        image='./Assets/images/tecnologias/javascript.png' 
+                        texto={'JavasCript'}/>
                     </Grid>
 
-                    <Grid item xs={6} md={3} className='gridHabilidades'>
-                        <CardHabilidades image='./Assets/images/tecnologias/typescript.png' texto={'Typescript'}/>
+                    <Grid item xs={5} md={3} className='gridCards'>
+                        <CardHabilidades 
+                        image='./Assets/images/tecnologias/typescript.png' 
+                        texto={'Typescript'}/>
                     </Grid>
 
-                    <Grid item xs={6} md={3} className='gridHabilidades'>
-                        <CardHabilidades image='./Assets/images/tecnologias/bootstrap.png' texto={'Bootstrap'}/>
+                    <Grid item xs={5} md={3} className='gridCards'>
+                        <CardHabilidades 
+                        image='./Assets/images/tecnologias/bootstrap.png' 
+                        texto={'Bootstrap'}/>
                     </Grid>
 
-                    <Grid item xs={6} md={3} className='gridHabilidades'>
-                        <CardHabilidades image='./Assets/images/tecnologias/react.png' texto={'React'}/>
+                    <Grid item xs={5} md={3} className='gridCards'>
+                        <CardHabilidades 
+                        image='./Assets/images/tecnologias/react.png' 
+                        texto={'React'}/>
                     </Grid>
 
-                    <Grid item xs={6} md={3} className='gridHabilidades'> 
-                        <CardHabilidades image='./Assets/images/tecnologias/material.png' texto={'MUI'}/>
+                    <Grid item xs={5} md={3} className='gridCards'> 
+                        <CardHabilidades 
+                        image='./Assets/images/tecnologias/material.png' 
+                        texto={'MUI'}/>
                     </Grid>
 
-                    <Grid item xs={6} md={3} className='gridHabilidades'>
-                        <CardHabilidades image='./Assets/images/tecnologias/node.png' texto={'Node'}/>
+                    <Grid item xs={5} md={3} className='gridCards'>
+                        <CardHabilidades 
+                        image='./Assets/images/tecnologias/node.png' 
+                        texto={'Node'}/>
                     </Grid>
                 </Grid>
             </Box>

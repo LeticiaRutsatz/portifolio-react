@@ -20,11 +20,24 @@ function About(){
                 height: {xs: '100%', sm:'100%'},
                 background: theme.palette.secondary.main,
             }}>
-                <Typography variant="h4" component="h4" color={theme.letter.primary.main} className='title' id="About">
+                <Typography 
+                variant="h4" 
+                component="h4" 
+                color={theme.letter.primary.main} 
+                className='title' 
+                id="About">
                     Sobre mim
                 </Typography>
 
-                <Typography variant="h6" component="h6" color={theme.letter.primary.main} className='p' sx={{fontSize:'1.2rem', paddingTop:'2rem'}}>
+                <Typography 
+                variant="h6" 
+                component="h6" 
+                color={theme.letter.primary.main} 
+                className='p' 
+                sx={{
+                    fontSize:'1.2rem',
+                    paddingTop:'2rem'
+                }}>
                     Me chamo Letícia, tenho 19 anos e no ano de 2022 iniciei no ramo da Tecnologia. <br />
                     Comecei meus estudos através de cursos livres na internet como Lógica de Programação. <br />
                     Em Julho de 2022 ingressei no Programa Starter Full Stack Developer GrowDev, <br />

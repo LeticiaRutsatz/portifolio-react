@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: var(--purple-ligth);
+}
+
 :root {
     --purple-dark: #882BFF;
     --purple-darker: #4b1a8b;
@@ -19,9 +28,39 @@
     cursor: pointer;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 200 !important;
-    align-items: center ;
+    text-align: center !important;
     font-size: 14px !important;
     color: var(--white) !important;
+}
+
+#Habilidades::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    bottom: 0.5px;
+    border-radius: 8px;
+    background: var(--purple-dark);
+}
+
+#About::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 60px;
+    bottom: 0.5px;
+    border-radius: 8px;
+    background: var(--purple-dark);
+}
+
+#Projetos::before, #Contatos::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 80px;
+    bottom: 0.5px;
+    border-radius: 8px;
+    background: var(--purple-dark);
 }
 
 .p{
@@ -41,35 +80,6 @@
     position: relative !important;
 }
 
-#About::before{
-    content: '';
-    position: absolute;
-    height: 4px;
-    width: 60px;
-    bottom: 0.5px;
-    border-radius: 8px;
-    background: var(--purple-dark);
-}
-
-#Habilidades::before{
-    content: '';
-    position: absolute;
-    height: 4px;
-    width: 100px;
-    bottom: 0.5px;
-    border-radius: 8px;
-    background: var(--purple-dark);
-}
-
-#projetosCard::before{
-    content: '';
-    position: absolute;
-    height: 4px;
-    width: 150px;
-    bottom: 0.5px;
-    border-radius: 8px;
-    background: var(--purple-dark);
-}
 
 .image-tag{
     width: 80%;
@@ -84,14 +94,12 @@
     text-transform: none !important;
     font-weight: 200 !important;
     border-radius: 7px !important;
-    margin-left: 3rem !important;
     margin-top: 1.5rem !important;
     color: var(--white) !important;
 }
 
 #projetos{
     background-color: var(--purple-dark);
-    margin-left: 3rem !important;
 }
 
 #projetos:hover{
@@ -107,13 +115,7 @@
     background-color: var(--purple-dark);
 }
 
-.cardHabilidades{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 10rem;
-    height: 12rem;
+#cardHabilidades{
     margin-top: 3rem;
     background: linear-gradient(139.04deg, rgba(255, 255, 255, 0.39) -9.89%, rgba(255, 255, 255, 0) 106.65%);
     border: 0.424528px solid #FFFFFF;
@@ -121,13 +123,36 @@
     border-radius: 16.9811px;
 }
 
-.cardHabilidades:hover{
+#cardHabilidades:hover, .cardprojetos:hover{
     box-shadow: 10px 10px 44px 3px var(--boxShadow) !important;
 }
 
-
-.gridHabilidades{
-    display: flex;
-    justify-content: center;
-    margin: none;
+.cardprojetos{
+    margin-top: 4rem;
+    width: 18rem !important;
+    background-color: var(--purple-darker) !important;
+    color: var(--white) !important;
+    border-radius: 0.5rem !important;
 }
+
+.gridCards{
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+}
+
+.displayColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-Footer{
+    border-radius: 40rem !important;
+    width: 1rem !important;
+    height: 4rem !important;
+    background-color: var(--purple-dark) !important;
+}
+
+
