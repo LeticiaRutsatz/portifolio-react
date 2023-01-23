@@ -57,7 +57,7 @@ function Header(){
                 className="button-home" 
                 id="projetos" 
                 sx={{marginLeft:'3rem'}}>
-                    <a href="#projetosCard">Projetos</a>
+                    <a href="#Projetos">Projetos</a>
                 </Button>
 
                 <Button 
