@@ -84,21 +84,21 @@ function Habilidades() {
           />
         </Grid>
 
-        <Grid item xs={6} md={3} className="gridCards">
+        <Grid item xs={5} md={3} className="gridCards">
           <CardHabilidades
             image="./Assets/images/tecnologias/postgresql.png"
             texto={"PostgreSQL"}
           />
         </Grid>
 
-        <Grid item xs={6} md={3} className="gridCards">
+        <Grid item xs={5} md={3} className="gridCards">
           <CardHabilidades
             image="./Assets/images/tecnologias/jest.png"
             texto={"Jest"}
           />
         </Grid>
 
-        <Grid item xs={6} md={3} className="gridCards">
+        <Grid item xs={5} md={3} className="gridCards">
           <CardHabilidades
             image="./Assets/images/tecnologias/typeorm.png"
             texto={"TypeOrm"}
