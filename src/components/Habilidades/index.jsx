@@ -1,8 +1,8 @@
-import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import React from "react";
 import "../../config/style.css";
-import { CardHabilidades } from "../Card/habilidades";
+import CardHabilidades from "../Card/habilidades";
 
 function Habilidades() {
   const theme = useTheme();
@@ -110,3 +110,4 @@ function Habilidades() {
 }
 
 export { Habilidades };
+

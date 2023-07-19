@@ -117,11 +117,9 @@ a {
 
 #cardHabilidades {
   margin-top: 3rem;
-  background: linear-gradient(
-    139.04deg,
-    rgba(255, 255, 255, 0.39) -9.89%,
-    rgba(255, 255, 255, 0) 106.65%
-  );
+  background: linear-gradient(139.04deg,
+      rgba(255, 255, 255, 0.39) -9.89%,
+      rgba(255, 255, 255, 0) 106.65%);
   border: 0.424528px solid #ffffff;
   backdrop-filter: blur(7.64151px);
   border-radius: 16.9811px;
@@ -151,6 +149,11 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.displayColumn.hovered {
+  transform: translate(-10%, 0%) scale(1.2);
+  z-index: 1;
 }
 
 .buttons-Footer {
