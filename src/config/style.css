@@ -72,6 +72,30 @@ a {
   padding-right: 3rem !important;
 }
 
+.animation {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 200 !important;
+  font-size: 1.2rem !important;
+  padding-left: 3rem !important;
+  border-right: 4px solid;
+  width: 37ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 5s steps(37), blinking 0.5s infinite step-end alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blinking {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .title {
   font-family: "Poppins", sans-serif !important;
   font-weight: 500 !important;

@@ -56,7 +56,7 @@ function Header() {
           variant="h6"
           component="h6"
           color={theme.palette.primary.main}
-          className="p"
+          className="animation"
         >
           Estudante de Sistemas de Informação
         </Typography>
