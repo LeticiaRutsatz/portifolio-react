@@ -58,7 +58,7 @@ function Header() {
           color={theme.palette.primary.main}
           className="p"
         >
-          Estudante de Desenvolvimento Full-Stack na Growdev
+          Estudante de Sistemas de Informação
         </Typography>
 
         <Button
