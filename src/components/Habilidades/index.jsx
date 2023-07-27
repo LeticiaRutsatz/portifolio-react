@@ -45,14 +45,14 @@ function Habilidades() {
         <Grid item xs={5} md={3} className="gridCards">
           <CardHabilidades
             image="./Assets/images/tecnologias/javascript.png"
-            texto={"JavasCript"}
+            texto={"JavaScript"}
           />
         </Grid>
 
         <Grid item xs={5} md={3} className="gridCards">
           <CardHabilidades
             image="./Assets/images/tecnologias/typescript.png"
-            texto={"Typescript"}
+            texto={"TypeScript"}
           />
         </Grid>
 
